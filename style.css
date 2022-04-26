@@ -41,6 +41,10 @@ body{
     background-color: rgb(41, 208, 11);
 }
 
+#playeroneside h2{
+    font-size: 1rem;
+}
+
 #player1gun {
     display: flex;
     align-items: center;
@@ -96,6 +100,10 @@ body{
     width: 15vw;
     border: 3px solid rgb(0, 0, 0);
     background-color: rgb(32, 9, 208);
+}
+
+#playertwoside h2{
+    font-size: 1rem;
 }
 
 .playertwo{
@@ -165,24 +173,21 @@ body{
 
 .card {
     position: relative;
-    width: 50vw;
+    width: 70vw;
     height: 10vh;
     display: flex;
     margin: auto;
-    justify-items: center;
+    justify-content: center;
     border-radius: 53px;
     background: #f9a4a4;
-    box-shadow: -33px -33px 66px #e66060,
-        33px 33px 10px #ffbdbd;
+    box-shadow: -13px -13px 25px #e66060,
+        13px 13px 10px #ffbdbd;
 }
 
 .scores {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 2vh;
-    margin-left: 1vw;
+    margin: 3vh auto 0 auto;
     padding: 5px;
     font-size: 1rem;
     text-align: center;
@@ -192,6 +197,8 @@ body{
 .scores div {
     display: flex;
     margin-right: 3vw;
+    display: flex;
+    font-size: 1rem;
 }
 
 #scores-4{
