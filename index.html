@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="gameTitle">
+        <h2>Battle Field</h2>
+    </div>
+    <div class="battleField">
+
+        <div class="Player-One">
+            <div id="playeroneside">
+                <h2>Player 1</h2>
+            </div>
+            <div id="player1">
+                <div class="playerone"></div>
+            </div>
+            <div id="player1gun">
+                <div id="playeronescore"><span>damage</span></div>
+            </div>
+        </div>
+
+        <div class="Player-Two">
+            <div id="playertwoside">
+                <h2>Player 2</h2>
+            </div>
+            <div id="player2">
+                <div class="playertwo"></div>
+            </div>
+            <div id="player2gun">
+                <div id="playertwoscore"><span>damage</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="ShootBtn" onclick="shootBtn()">Shoot</button>
+        <button id="resetBtn" onclick="resetBtn()">Reset</button>
+    </div>
+    <br><br>
+    <div class="Score-Board">
+        <div class="card">
+            <div class="scores">
+                <div id="scores-1">Player 1</div>
+                <div id="scores-3">Win</div>
+                <div id="scores-4">0</div>
+                <div id="scores-5">Player 2</div>
+                <div id="scores-7">Win</div>
+                <div id="scores-8">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <div class="result-item" id="scores-9">Results</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

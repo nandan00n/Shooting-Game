@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+    overflow-x: hidden;
+}
+.battleField {
+    border-left-color: rgb(55, 40, 228);
+    border-right-color: rgb(255, 0, 0);
+    border-left-width: 20px;
+    border-right-width: 20px;
+    height: 50vh;
+    width: 92vw;
+    overflow: hidden;
+    align-content: center;
+}
+
+#gameTitle {
+    width: auto;
+}
+
+#gameTitle h2{
+    display: flex;
+    justify-content: center;
+}
+
+#playeroneside {
+    position: relative;
+    float: left;
+    height: 48vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(41, 208, 11);
+}
+
+#player1gun {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 2vw;
+    top: 24vh;
+    float: left;
+    width: 5vw;
+    height: 1vh;
+    background-color: #c30707;
+}
+
+#playeronescore {
+    font-size:1rem;
+    font-weight: bold;
+    margin-top: 35vh;
+}
+
+.playerone{
+    align-items: center;
+    width: 6vw;
+    height:8vh;
+    background-color: rgb(14, 188, 46);
+}
+
+#player1 {
+    position: relative;
+    float: left;
+    top:20vh ;
+    margin-left: 20px;
+}
+
+#player2 {
+    position: relative;
+    float: right;
+    top: 20vh;
+    margin-right: 50px;
+}
+
+
+.battleField playertwoside{
+    display: flex;
+    margin-right: 0px;
+}
+
+#playertwoside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: right;  
+    height: 48vh;
+    width: 15vw;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(32, 9, 208);
+}
+
+.playertwo{
+    align-items: center;
+    width: 6vw;
+    height:8vh;
+    background-color: rgb(241, 10, 10);  
+}
+
+
+#player2gun {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2vw;
+    top: 24vh;
+    width: 5vw;
+    height: 1vh;
+    background-color: #08c102;
+}
+
+#playertwoscore {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 35vh;
+}
+
+.buttons{
+    display: flex;
+    margin: 2vh;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+#ShootBtn {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #ff0000;
+    border:none;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #ff0303,
+        -6px -6px 12px #ffffff;
+}
+
+#ShootBtn:hover {
+    border: 1px solid rgb(179, 17, 17);
+}
+
+#ShootBtn:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+        -4px -4px 12px #c3ad07;
+}
+
+#resetBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.Score-Board {
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    border-radius: 53px;
+    background: #f9a4a4;
+    box-shadow: -33px -33px 66px #e66060,
+        33px 33px 10px #ffbdbd;
+}
+
+.scores {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.scores div {
+    display: flex;
+    margin-right: 3vw;
+}
+
+#scores-4{
+    color: green !important;
+}
+
+#scores-8{
+    color: rgb(246, 6, 6) !important;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2vh;
+}
+
+.result-item {
+    position: absolute;
+    
+    align-items: center;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e72727;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c91c1c,
+        -6px -6px 12px #ffffff;
+}
+
+#resetBtn {
+    cursor: pointer;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #0a45bb;
+    border: none;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #1c53c9,
+        -6px -6px 12px #ffffff;
+}
+
+
