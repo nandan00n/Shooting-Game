@@ -1,3 +1,8 @@
+function resetBtn(){
+  location.reload();
+  localStorage.clear();
+}
+
 let player1Score=0;
 let player2Score=0;
 
@@ -38,13 +43,7 @@ function shootBtn(){
         let result = player1Score===player2Score ? "Tied" : player1Score>player2Score ? "Player 1 Wins" : "Player 2 Wins";
         console.log(result);    
      } 
-        alert("Game over")
-        if (confirm("would you like to Restart") == true) {
-            text = "You pressed OK!";
-            location.reload();
-          } else {
-            text = "You cancelled the came!";
-          }
+      finished();
     }
 
       if(player1shooting>player2shooting){
@@ -74,7 +73,3 @@ function finished(gameresult){
   document.getElementById("ShootBtn").style.backgroundColor = "red";
 }
 
-function resetBtn(){
-    location.reload();
-    localStorage.clear();
-}
