@@ -19,8 +19,8 @@ function shootBtn(){
     localStorage.setItem("player1Score","playeronescore");
     document.getElementById("playertwoscore").innerHTML=player2shooting;
     
-    player1Health-=player2shooting;
-    player2Health-=player1shooting;
+    player1Health-=player1shooting;
+    player2Health-=player2shooting;
     
     console.log(`Player 1 Health : ${player1Health}
     Player 2 Health : ${player2Health}`);
@@ -32,14 +32,18 @@ function shootBtn(){
         document.getElementById("scores-9").innerHTML = "Player 1 Wins";
       }
     rounds++;
-    
+
     if(rounds==5){
+      if(rounds==5){
+        let result = player1Score===player2Score ? "Tied" : player1Score>player2Score ? "Player 1 Wins" : "Player 2 Wins";
+        console.log(result);    
+     } 
         alert("Game over")
         if (confirm("would you like to Restart") == true) {
             text = "You pressed OK!";
             location.reload();
           } else {
-            text = "You canceled the came!";
+            text = "You cancelled the came!";
           }
     }
 
@@ -49,34 +53,25 @@ function shootBtn(){
       else{
         player2Score+= 1;
       }
-      console.log(`Player 1 Wins : ${player1Score} 
-   Player 2 Wins : ${player2Score}`)
       document.getElementById("scores-4").innerHTML=player1Score;
       document.getElementById("scores-8").innerHTML=player2Score;
+
+      console.log(`Player 1 Wins : ${player1Score} 
+   Player 2 Wins : ${player2Score}`)
 
       if(player1Score==3){
         finished("Player 1 Wins!")
       }
       else if(player2Score==3){
         finished("Player 2 Wins!")
-      }
-   
-     if(rounds==5){
-        let result = player1Score===player2Score ? "Tied" : player1Score>player2Score ? "Player 1 Wins" : "Player 2 Wins";
-        console.log(result);    
-     } 
+      } 
 }
 
 function finished(gameresult){
   document.getElementById("scores-9").innerHTML = gameresult;
-  alert("Game over")
-  if (confirm("would you like to Restart") == true) {
-      text = "You pressed OK!";
-      location.reload();
-    } else {
-      text = "You canceled the game!";
-    }
-    console.log(text);
+  document.getElementById("ShootBtn").disabled = true;
+  document.getElementById("ShootBtn").innerHTML="Game Over";
+  document.getElementById("ShootBtn").style.backgroundColor = "red";
 }
 
 function resetBtn(){
